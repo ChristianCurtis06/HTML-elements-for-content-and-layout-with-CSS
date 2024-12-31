@@ -1,0 +1,97 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav {
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+/* Task 1: Styling a User Registration Form */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input, button{ 
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input:focus, input:hover {
+    box-shadow: 0 0 10px dodgerblue;
+}
+
+
+button {
+    border: none;
+    color: white;
+    background-color: dodgerblue;
+    font-size: large;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: rgb(0, 104, 209);
+    box-shadow: 0 0 10px dodgerblue;
+}
+
+
+/* Task 2: Enhancing Lists for Navigation */
+ul {
+    display: flex;
+    justify-content: center;
+    padding-left: 15px;
+    margin: 0;
+    list-style-type: "~";
+}
+
+li {
+    margin: 0px 20px;
+}
+
+li > a {
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+li > a:hover {
+    color: dodgerblue;
+    text-shadow: 0 0 10px #ccc;
+}
+
+/* Task 3: Styling Tables for Data Presentation */
+table {
+    width: 600px;
+    border-collapse: collapse;
+    margin: 50px auto;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: dodgerblue;
+    color: white;
+}
+
+tr:nth-child(even){
+    background-color: #ddd;
+}

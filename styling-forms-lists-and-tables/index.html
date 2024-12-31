@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">CONTACT ME</a></li>
+        </ul>
+    </nav>
+
+    <h1>User Registration Form</h1>
+
+        <form action="/submit" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" placeholder="Enter your email" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Create your password" required>        
+            <br>
+
+            <button class="form-button" type="submit">SUBMIT</button>
+        </form>
+    
+    <table>
+        <tr>
+            <th>Platform</th>
+            <th>Users</th>
+        </tr>
+        <tr>
+            <td>Facebook</td>
+            <td>198,276</td>
+        </tr>
+        <tr>
+            <td>Instagram</td>
+            <td>215,921</td>
+        </tr>
+        <tr>
+            <td>X</td>
+            <td>126,845</td>
+        </tr>
+    </table>
+</body>
+</html>
