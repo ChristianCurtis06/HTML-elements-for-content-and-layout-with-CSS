@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Entertainment Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Entertainment Web Page</h1>
+
+    <section id="navigation-list">
+        <h2>Navigation List</h2>
+        <nav>
+            <ul>
+                <li><a href="#movie-gallery">Movie Gallery</a></li>
+                <li><a href="#album-gallery">Album Gallery</a></li>
+                <li><a href="#feedback-form">Feedback Form</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section id="movie-gallery">
+        <h2>Movie Gallery</h2>
+        <div>
+            <img class="poster" src="the_shawshank_redemption.jpg" alt="The Shawshank Redemption Poster">
+            <br>
+            <button class="movie-button">Watch Now</button>
+        </div>
+        <div>
+            <img class="poster" src="the_godfather.jpg" alt="The Godfather Poster">
+            <br>
+            <button class="movie-button">Watch Now</button>
+        </div>
+        <div>
+            <img class="poster" src="the_dark_knight.jpg" alt="The Dark Knight Poster">
+            <br>
+            <button class="movie-button">Watch Now</button>
+        </div>
+    </section>
+    
+    <section id="album-gallery">
+        <h2>Album Gallery</h2>
+        <div>
+            <img class="album" src="born_in_the_usa.png" alt="Born in the USA Album Cover">
+            <br>
+            <button class="album-button">Listen Now</button>
+        </div>
+        <div>
+            <img class="album" src="abbey_road.jpg" alt="Abbey Road Album Cover">
+            <br>
+            <button class="album-button">Listen Now</button>
+        </div>
+        <div>
+            <img class="album" src="pink_floyd.png" alt="Pink Floyd Album Cover">
+            <br>
+            <button class="album-button">Listen Now</button>
+        </div>
+    </section>
+
+    <section id="feedback-form">
+        <h2>Feedback Form</h2>
+        <form action="/submit" method="post">
+            <label for="type">Type:</label>
+            <select name="type" id="type">
+                <option value="poster">Movie</option>
+                <option value="album">Album</option>
+            </select><br>
+
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" placeholder="Enter the title" required>
+            <br>
+
+            <label>Rating:</label>
+            <input type="radio" name="rating" id="one" value="1" required>
+            <label for="one">1</label>
+            <input type="radio" name="rating" id="two" value="2" required>
+            <label for="two">2</label>
+            <input type="radio" name="rating" id="three" value="3" required>
+            <label for="three">3</label>
+            <input type="radio" name="rating" id="four" value="4" required>
+            <label for="four">4</label>
+            <input type="radio" name="rating" id="five" value="5" required>
+            <label for="five">5</label>
+            <br>
+
+            <label for="comments">Additional Comments:</label>
+            <br>
+            <textarea name="comments" id="comments" rows="5" cols="25" placeholder="Enter your comments here"></textarea>
+            <br>
+        
+            <button class="form-button" type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>

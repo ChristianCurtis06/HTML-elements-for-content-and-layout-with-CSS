@@ -1,0 +1,116 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+    margin-left: 40px;
+}
+
+h2 {
+    color: white;
+    background-color: midnightblue;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+section {
+    margin: 20px;
+    margin-bottom: 30px;
+}
+
+#navigation-list {
+    margin: 20px;
+}
+
+ul, div, form {
+    padding: 0px;
+    margin: 0px 20px;
+}
+
+/* Task 1: Interactive Navigation Links */
+li {
+    list-style-type: none;
+    margin: 10px 0px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: dodgerblue;
+}
+
+nav li a:hover {
+    text-decoration: underline;
+    color: midnightblue;
+}
+
+/* Task 2: Eye-catching Image Gallery */
+img.poster {
+    height: auto;
+    width: 250px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin: 10px 0px;
+    transition: 0.5s;
+}
+
+img.album {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin: 10px 0px;
+    transition: 0.5s;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px dodgerblue;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+/* Task 3: Dynamic Call-to-Action Buttons */
+button {
+    border: none;
+    color: white;
+    background-color: dodgerblue;
+    font-size: large;
+    transition: 0.5s;
+}
+
+button.movie-button, button.album-button {
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: midnightblue;
+    box-shadow: 0 0 10px dodgerblue;
+}
+
+/* Task 4: Interactive Form for User Feedback */
+form {
+    width: 230px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input, textarea, button.form-button {
+    padding: 10px;
+    margin: 10px 0px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input:focus, select:focus, textarea:focus {
+    box-shadow: 0 0 8px dodgerblue;
+}
+
+input[type="radio"]:checked + label {
+    font-weight: bold;
+    color: dodgerblue;
+}
